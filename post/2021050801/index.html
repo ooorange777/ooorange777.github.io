@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="ooorange ">
+<meta name="description" content="决定水一篇《给`hugo hello-friend-ng主题加一个面包屑导航》
+" />
+<meta name="keywords" content="影评,书评,日常,吐槽, hugo" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://ooorange777.github.io/post/2021050801/" />
+
+
+    <title>
+        
+            Add breadcrumb to hugo :: Notomorrow Club 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://ooorange777.github.io/main.edb08d9474e18f675672f6f7b3debc9342ee3f0cb88e9fb4079620d09c53b30c.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ooorange777.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ooorange777.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ooorange777.github.io/favicon-16x16.png">
+    <link rel="manifest" href="https://ooorange777.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://ooorange777.github.io/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://ooorange777.github.io/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+
+<meta itemprop="name" content="Add breadcrumb to hugo">
+<meta itemprop="description" content="决定水一篇《给`hugo hello-friend-ng主题加一个面包屑导航》"><meta itemprop="datePublished" content="2021-05-08T12:41:07&#43;08:00" />
+<meta itemprop="dateModified" content="2021-05-08T12:41:07&#43;08:00" />
+<meta itemprop="wordCount" content="718"><meta itemprop="image" content="https://ooorange777.github.io/"/>
+<meta itemprop="keywords" content="hugo," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ooorange777.github.io/"/>
+
+<meta name="twitter:title" content="Add breadcrumb to hugo"/>
+<meta name="twitter:description" content="决定水一篇《给`hugo hello-friend-ng主题加一个面包屑导航》"/>
+
+
+
+
+    <meta property="og:title" content="Add breadcrumb to hugo" />
+<meta property="og:description" content="决定水一篇《给`hugo hello-friend-ng主题加一个面包屑导航》" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ooorange777.github.io/post/2021050801/" /><meta property="og:image" content="https://ooorange777.github.io/"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-05-08T12:41:07&#43;08:00" />
+<meta property="article:modified_time" content="2021-05-08T12:41:07&#43;08:00" />
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-05-08 12:41:07 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://ooorange777.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">$ cd /</span>
+            <span class="breadcrumb"><div  class="breadcrumb">
+    
+
+  
+
+  
+
+  <li>
+    <a href="https://ooorange777.github.io/">Notomorrow Club</a>
+  </li>
+
+
+  <li>
+    <a href="https://ooorange777.github.io/post/">Posts</a>
+  </li>
+
+
+  <li class="active">
+    <a href="https://ooorange777.github.io/post/2021050801/">Add breadcrumb to hugo</a>
+  </li>
+
+  </div>
+  
+  <style>
+    .breadcrumb {list-style:none;}
+    .breadcrumb li{display:inline-block;font-display: auto;}
+    .breadcrumb li+li ::before{padding:0px 0px; content:"/";}
+    .breadcrumb li a{text-decoration:none;}
+  </style>
+</span>
+            <span class="logo__cursor" style=
+                  "
+                   background-color:#67a2c9;
+                   animation-duration:1s;">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://ooorange777.github.io/about/">About</a></li><li><a href="https://ooorange777.github.io/post/">Posts</a></li><li><a href="https://ooorange777.github.io/tags/">Tags</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://ooorange777.github.io/post/2021050801/">Add breadcrumb to hugo</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>决定水一篇《给`hugo <em>hello-friend-ng</em>主题加一个面包屑导航》</p>
+<p>在为<code>hugo</code>站点选主题的时候，一眼看中了<em>hello-friend-ng</em>，非常喜欢主题的<strong>logo设计</strong>，有种打开console等待输入的感觉。看Demo的时候我以为这就是面包屑导航，结果发现并不是，感觉有点可惜，于是想着自己改一改吧。</p>
+<p>就是我这个菜鸡的水平不够，自定义<code>CSS</code>结果路径怎么设置都不对，只能直接和<code>HTML</code>丢在一起了。</p>
+<p>下面就开始吧！</p>
+<ol>
+<li>
+<p>在<code>主题目录/layouts/partials</code>下新增一个<em>breadcrumb.html</em></p>
+</li>
+<li>
+<p>编辑<code>breadcrumb.html</code>，代码如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span>  <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span>&gt;
+  {{ template &#34;breadcrumbnav&#34; (dict &#34;p1&#34; . &#34;p2&#34; .) }}
+&lt;/<span style="color:#f92672">div</span>&gt;
+{{ define &#34;breadcrumbnav&#34; }}
+{{ if .p1.Parent }}
+  {{ template &#34;breadcrumbnav&#34; (dict &#34;p1&#34; .p1.Parent &#34;p2&#34; .p2 )  }}
+{{ else if not .p1.IsHome }}
+  {{ template &#34;breadcrumbnav&#34; (dict &#34;p1&#34; .p1.Site.Home &#34;p2&#34; .p2 )  }}
+{{ end }}
+&lt;<span style="color:#f92672">li</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">if</span> <span style="color:#a6e22e">eq</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">p1</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">p2</span> <span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span>&gt;
+  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .p1.Permalink }}&#34;</span>&gt;{{ .p1.Title }}&lt;/<span style="color:#f92672">a</span>&gt;
+&lt;/<span style="color:#f92672">li</span>&gt;
+{{ end }}
+</code></pre></div></li>
+<li>
+<p>新增<code>style.css</code>，具体放在哪里我也不知道，所以我的做法是加入<code>breadcrumb.html</code>中，代码如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* breadcrumb */</span>
+.<span style="color:#a6e22e">breadcrumb</span> {
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#fafafa</span>;
+    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">list-style</span>: <span style="color:#66d9ef">none</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>; 
+}
+.<span style="color:#a6e22e">breadcrumb</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">li</span>{
+    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>; 
+    <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">.7</span>;
+}
+.<span style="color:#a6e22e">breadcrumb</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">li</span><span style="color:#f92672">+</span><span style="color:#f92672">li</span>:<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>; 
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#ccc</span>; 
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;&gt;&#34;</span>; 
+}
+.<span style="color:#a6e22e">breadcrumb</span> <span style="color:#f92672">li</span> <span style="color:#f92672">a</span>{<span style="color:#66d9ef">text-decoration</span>:<span style="color:#66d9ef">none</span>;}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">breadcrumb</span> {<span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#252627</span>;}
+</code></pre></div><p>我调整过的代码如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* breadcrumb */</span>
+.<span style="color:#a6e22e">breadcrumb</span> {<span style="color:#66d9ef">list-style</span>:<span style="color:#66d9ef">none</span>;}
+.<span style="color:#a6e22e">breadcrumb</span> <span style="color:#f92672">li</span>{<span style="color:#66d9ef">display</span>:<span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;font-display: <span style="color:#66d9ef">auto</span>;}
+.<span style="color:#a6e22e">breadcrumb</span> <span style="color:#f92672">li</span><span style="color:#f92672">+</span><span style="color:#f92672">li</span> ::<span style="color:#a6e22e">before</span>{<span style="color:#66d9ef">padding</span>:<span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>; <span style="color:#66d9ef">content</span>:<span style="color:#e6db74">&#34;/&#34;</span>;}
+.<span style="color:#a6e22e">breadcrumb</span> <span style="color:#f92672">li</span> <span style="color:#f92672">a</span>{<span style="color:#66d9ef">text-decoration</span>:<span style="color:#66d9ef">none</span>;}
+</code></pre></div></li>
+<li>
+<p>完成以上步骤后，我们就获得一个<em>面包屑导航</em>插件了，可以插入你需要的页面。使用方式，在你需要的页面中，适合的地方插入<code>{{ partial &quot;breadcrumb.html&quot; . }}</code>。一般需要导航条的页面有<em>single.html</em>和<em>list.html</em></p>
+</li>
+<li>
+<p>鉴于我自己的需要，我将面包屑导航插入<code>logo.html</code>。经过反复试验，插在<code>&lt;span class=&quot;logo__text&quot;&gt;</code>和<code>&lt;span class=&quot;logo__cursor&quot;&gt;</code>中间。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">span</span> <span style="color:#f92672">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;logo__text&#34;</span><span style="color:#f92672">&gt;</span>{<span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">with</span> <span style="color:#960050;background-color:#1e0010">.Site.Params.Logo.logoText</span> }<span style="color:#960050;background-color:#1e0010">}</span>{<span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">.</span> }<span style="color:#960050;background-color:#1e0010">}</span>{<span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">else</span> }<span style="color:#960050;background-color:#1e0010">}</span><span style="color:#f92672">hello</span>{<span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">end</span> }<span style="color:#960050;background-color:#1e0010">}</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">span</span><span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;</span><span style="color:#f92672">span</span> <span style="color:#f92672">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;breadcrumb&#34;</span><span style="color:#f92672">&gt;</span>{<span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">partial</span> <span style="color:#960050;background-color:#1e0010">&#34;breadcrumb.html&#34;</span> <span style="color:#960050;background-color:#1e0010">.</span> }<span style="color:#960050;background-color:#1e0010">}</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">span</span><span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;</span><span style="color:#f92672">span</span> <span style="color:#f92672">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;logo__cursor&#34;</span> <span style="color:#f92672">style</span><span style="color:#f92672">=</span>
+</code></pre></div></li>
+<li>
+<p>具体效果请看本站。</p>
+</li>
+</ol>
+<p><strong>参考</strong></p>
+<p><a href="https://immmmm.com/hugo-add-breadcrumb/">Hugo 添加面包屑导航</a></p>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://ooorange777.github.io/tags/hugo/">hugo</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            <span><a href="https://ooorange777.github.io/">Notomorrow Club</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span>Theme <a href="https://themes.gohugo.io/hugo-theme-hello-friend-ng/">Hello-friend-ng</a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by ooorange</span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://ooorange777.github.io/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

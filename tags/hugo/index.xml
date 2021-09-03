@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Notomorrow Club</title>
+    <link>https://ooorange777.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Notomorrow Club</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 08 May 2021 12:41:07 +0800</lastBuildDate><atom:link href="https://ooorange777.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add breadcrumb to hugo</title>
+      <link>https://ooorange777.github.io/post/2021050801/</link>
+      <pubDate>Sat, 08 May 2021 12:41:07 +0800</pubDate>
+      
+      <guid>https://ooorange777.github.io/post/2021050801/</guid>
+      <description>&lt;p&gt;决定水一篇《给`hugo &lt;em&gt;hello-friend-ng&lt;/em&gt;主题加一个面包屑导航》&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>First blog</title>
+      <link>https://ooorange777.github.io/post/2021050601/</link>
+      <pubDate>Thu, 06 May 2021 00:10:03 +0800</pubDate>
+      
+      <guid>https://ooorange777.github.io/post/2021050601/</guid>
+      <description>Hello World! Heading 1 Heading 2 Quote order list jfiadn list jifej 强調 著重 code var person = { firstName:&amp;#34;John&amp;#34;, lastName:&amp;#34;Doe&amp;#34;, age:50, eyeColor:&amp;#34;blue&amp;#34; }; notomorrow club</description>
+    </item>
+    
+  </channel>
+</rss>
